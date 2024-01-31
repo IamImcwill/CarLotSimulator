@@ -30,10 +30,16 @@ namespace CarLotSimulator
             car1.IsDriveble = true;
             instance.ListOfCars.Add(car1);
 
+            Console.WriteLine($"There are {CarLot.numberOfCars} cars in the car lot");
+
             Car car2 = new Car() {Make = "Lexus", Model = "RX 350 F Sport", EngineNoise = "VROOOOM", HonkNoise = "beep beep", Year = 2025, IsDriveble = true}; 
             
+            Console.WriteLine($"There are {CarLot.numberOfCars} cars in the car lot");
 
             Car car3 = new Car("Mercedes-Benz", "AMG GLE 63 S Coupe", 2025, "VROOOOOOOOM", "beep beep", true);
+
+            Console.WriteLine($"There are {CarLot.numberOfCars} cars in the car lot");
+
 
             instance.ListOfCars.Add(car1);
             instance.ListOfCars.Add(car2);

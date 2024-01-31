@@ -8,11 +8,15 @@ namespace CarLotSimulator
 {
     internal class Car
     {
-        public Car() { }
+        public Car() 
+        {
+          CarLot.numberOfCars++;
+        }
 
         public Car(string make, string model, int year, string engineNoise, string honkNoise, bool isDrivable) 
         
         {
+            CarLot.numberOfCars++;
             Make = make;
             Model = model;  
             Year = year;    

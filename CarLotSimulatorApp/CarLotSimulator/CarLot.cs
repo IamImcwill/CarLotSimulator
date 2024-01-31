@@ -8,6 +8,8 @@ namespace CarLotSimulator
 {
     internal class CarLot
     {
+        public static int numberOfCars = 0;
+       
         public List<Car> ListOfCars {get; set;} = new List<Car>();
     }
 }
